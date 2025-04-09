@@ -59,7 +59,7 @@ const PortfolioSection = () => {
     <section id="portfolio" className="section-padding bg-blackRich-light">
       <div className="container mx-auto">
         <h2 className="section-title text-center">
-          <span className="text-gradient-gold">Portfólio</span> Vivo
+          <span className="text-gradient-gold">Portfólio</span>
         </h2>
         <p className="text-lg text-white/80 text-center max-w-3xl mx-auto mb-12">
           Explore nossa coleção de projetos transformadores. Passe o mouse sobre cada projeto para ver detalhes 

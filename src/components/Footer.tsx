@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -17,7 +16,7 @@ const Footer = () => {
               Design que encanta e vende. Transformamos lojas em experiências memoráveis que aumentam o tráfego e convertem mais vendas.
             </p>
             <div className="flex space-x-4">
-              <SocialLink href="#" icon="instagram" />
+              <SocialLink href="https://www.instagram.com/visualshop.go/" icon="instagram" />
               <SocialLink href="#" icon="facebook" />
               <SocialLink href="#" icon="linkedin" />
               <SocialLink href="#" icon="pinterest" />
@@ -52,12 +51,8 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4 text-white">Contato</h3>
             <ul className="space-y-3 text-white/70">
               <li className="flex items-start">
-                <span className="mr-2 text-gold">📍</span>
-                <span>Av. Paulista, 1000 - São Paulo, SP</span>
-              </li>
-              <li className="flex items-start">
                 <span className="mr-2 text-gold">📱</span>
-                <span>(11) 99999-9999</span>
+                <span>(61) 9999-9999</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 text-gold">✉️</span>
