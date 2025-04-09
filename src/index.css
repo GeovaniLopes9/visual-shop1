@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 220 30% 65%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 180 100% 25%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 180 100% 25%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 220 30% 65%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 220 30% 65%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 220 30% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border scroll-smooth;
+  }
+
+  body {
+    @apply bg-blackRich text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    @apply bg-gold-gradient bg-clip-text text-transparent animate-text-gradient;
+  }
+
+  .text-gradient-teal {
+    @apply bg-teal-gradient bg-clip-text text-transparent animate-text-gradient;
+  }
+
+  .gold-shimmer {
+    @apply relative overflow-hidden;
+  }
+
+  .gold-shimmer::after {
+    @apply content-[''] absolute inset-0 bg-gold-gradient bg-200% opacity-20 animate-shimmer;
+  }
+  
+  .btn-primary {
+    @apply rounded-lg bg-gold px-5 py-3 text-blackRich font-medium hover:bg-gold-dark transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply rounded-lg bg-teal px-5 py-3 text-white font-medium hover:bg-teal-dark transition-colors duration-300;
+  }
+  
+  .card-hover {
+    @apply transition-transform duration-300 ease-out hover:translate-y-[-8px] hover:shadow-xl;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold mb-8 font-serif;
+  }
+  
+  .underline-gradient {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:h-1 after:bg-gold-gradient after:bottom-0 after:left-0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-200% {
+    background-size: 200% 100%;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7B9CD1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5A7CB3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
