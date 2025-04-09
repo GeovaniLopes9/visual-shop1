@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -89,7 +88,7 @@ const ContactSection = () => {
               </div>
               <div className="flex-1 bg-blackRich-light p-5 rounded-lg text-center">
                 <p className="text-white/70 mb-1">Telefone</p>
-                <p className="text-lg font-medium">(11) 99999-9999</p>
+                <p className="text-lg font-medium">+55 61 9230-1584</p>
               </div>
             </div>
           </div>

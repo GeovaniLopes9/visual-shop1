@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="space-y-3 text-white/70">
               <li className="flex items-start">
                 <span className="mr-2 text-gold">📱</span>
-                <span>(61) 9999-9999</span>
+                <span>+55 61 9230-1584</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 text-gold">✉️</span>
